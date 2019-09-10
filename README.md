@@ -11,7 +11,7 @@ In the folder named "data", "example_1d" includes the data used in "demo1.m";
 The "glmnet_matlab" folder is download from the website: https://web.stanford.edu/~hastie/glmnet_matlab/.
 
 
-Dr. Wang (Xuejing Wang from Umich) porvided a majority part of the code. Thanks to Dr. Wang. 
+Dr. Wang (Xuejing Wang from Umich) provided a majority part of the code. Thanks to Dr. Wang. 
 
 As for the incomplete part in the code, I completed them according to my understanding of the work.
 
