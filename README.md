@@ -8,7 +8,7 @@ In the folder named "data", "example_1d" includes the data used in "demo1.m";
 
 "image1.nii" and "image2.nii" are two sample images used in "demo2.m". "image3.nii" and "image4.nii" are copies of "image1.nii" and "image2.nii", only to create more data to do cross validation. (Which may not be a good idea.)
 
-The "glmnet" folder is download from the website: https://web.stanford.edu/~hastie/glmnet_matlab/.
+The "glmnet_matlab" folder is download from the website: https://web.stanford.edu/~hastie/glmnet_matlab/.
 
 
 Dr. Wang (Xuejing Wang from Umich) porvided a majority part of the code. Thanks to Dr. Wang. 
