@@ -24,8 +24,8 @@ level=1;
 %result =hwrfr_cv(level,lambda,5,C_levels, Y,1);
 result =hwrfr_cv(level,lambda,2,C_levels, Y,2);
 
-result.eta = result.eta_auc;
-result.level = result.level_auc;
 %Obtain beta by eta
-beta_est= getbeta(result.eta,result.level,1,size_X);
+beta_est= getbeta(result.eta_auc,result.level_auc,1,size_X);
+%draw ROC plot
+plot_best_roc(C_levels{result.level_auc},result.int_auc,result.eta_auc,Y);
 
