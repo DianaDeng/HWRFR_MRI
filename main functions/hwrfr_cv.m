@@ -53,7 +53,6 @@ DEV_fold=zeros(K,1);
 MER_fold=zeros(K,1);
 AUC_fold=zeros(K,1);
 
-
 switch(type)
     case 1
     family  = 'gaussian';  
@@ -180,56 +179,4 @@ switch(type)
         result.eta_auc=eta_opt_auc;
 end
 result.auc_opt = max(mean_AUC(:));
-end
-
-
-function [int,eta]=geteta(lambda,C,Y,family)
-%This function applies coordinate descent algorithm to solve for eta; 
-%when family = 'gaussian', it solves a linear regresion model; when family =
-%'binomial' it solves a logistic regression model
-options.weights        =            [];
-options.alpha          =             1;
-options.nlambda        =           100;
-options.lambda_min     =             0;
-options.lambda         =        lambda;
-options.standardize    =         false;%true
-options.thresh         =          1E-4;
-%options.dfmax          =             0;
-%options.pmax           =             0;
-options.exclude        =            [];
-options.penalty_factor =            [];
-options.maxit          =           100;
-options.HessianExact   =         false;
-options.type           =       'naive';%'covariance'
-fit = glmnet(C,Y,family,options);
-int=fit.a0;
-eta=fit.beta;
-end
-
-function [TPR ,FPR ]=getfptp(theta,theta_hat)
-thea = theta-1;    
-thea_hat = theta_hat-1; 
-A = sum(~thea.*~thea_hat);  % A: TN
-B = sum(~thea.*thea_hat);   % B: FP
-C = sum(thea.*~thea_hat);   % C: FN
-D = sum(thea.*thea_hat);    % D: TP
-FPR = B/(B+A);         % FPR=FP/(FP+TN)
-TPR = D/(D+C);          % TPR=TP/(TP+FN)
-%Sensitivity =TPR;
-%Specificity= 1-FPR;
-end
-
-function auc=areaundercurve(FPR,TPR)
-% given true positive rate and false positive rate calculates the area under the curve
-% true positive are on the y-axis and false positives on the x-axis
-% sum rectangular area between all points
-[x2,inds]=sort(FPR);
-x2=[x2;1];  % inventing a last point 1,1
-y2=TPR(inds); 
-y2=[y2;1];
-xdiff=diff(x2);
-xdiff=[x2(1);xdiff];
-auc1=sum(y2.*xdiff); % upper point area
-auc2=sum([0;y2([1:end-1])].*xdiff); % lower point area
-auc=mean([auc1,auc2]);
 end
