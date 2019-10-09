@@ -5,7 +5,7 @@ Classification of ADNI PET images via regularized 3D functional data analysis
 author: 
 Xuejing Wang, Bin Nan, Ji Zhu, Robert Koeppe & Kirk Frey
 
-preprocessing is completed in Jupyter. Please refer to the link https://jupyter.org/install.html to get started.
+Preprocessing is completed in Jupyter. Please refer to the link https://jupyter.org/install.html to get started.
 
 The folder named "main functions" contains all functions.
 
