@@ -1,10 +1,5 @@
 # HWRFR_PET
 
-Title: 
-Classification of ADNI PET images via regularized 3D functional data analysis
-author: 
-Xuejing Wang, Bin Nan, Ji Zhu, Robert Koeppe & Kirk Frey
-
 Preprocessing is completed in Jupyter. Please refer to the link https://jupyter.org/install.html to get started.
 
 The folder named "main functions" contains all functions.
@@ -22,3 +17,6 @@ Dr. Wang (Xuejing Wang from Umich) provided a majority part of the code. Thanks 
 As for the incomplete part in the code, Annan Deng completed them according to her understanding of the work.
 
 If any problem, please contact: Annan Deng via annandeng22@gmail.com.
+
+Reference:
+Wang X , Nan B , Zhu J , et al. Classification of ADNI PET images via regularized 3D functional data analysis[J]. Biostatistics & Epidemiology, 2017.
