@@ -18,14 +18,10 @@ In the folder named "demo", "demo1.m" provides an example for implementing the f
 
 In the folder named "data", "example_1d" includes the data used in "demo1.m"; "image1.nii" and "image2.nii" are two sample images used in "demo2.m"； "image3.nii" and "image4.nii" are copies of "image1.nii" and "image2.nii", only to create more data to do cross validation. (Which may not be a good idea.)
 
-The folder named "real_data" contains all the AD/NC images for building model.
-
-The folder named "predict_data" contains all the MCI/NC images for prediction.
-
 The "glmnet_matlab" folder is download from the website: https://web.stanford.edu/~hastie/glmnet_matlab/.
 
 
-Dr. Wang (Xuejing Wang from Umich) provided a majority part of the code. Thanks to Dr. Wang. As for the incomplete part in the code, Annan Deng completed them according to her understanding of the work, which includes all the preprocessing code, ROC code and get_beta function.
+Dr. Wang (Xuejing Wang from Umich) provided part of the code. Thanks to Dr. Wang. As for the incomplete part in the code, Annan Deng completed them according to her understanding of the work, which includes all the preprocessing code, ROC code and get_beta function.
 
 If any problem, please contact: Annan Deng via annandeng22@gmail.com.
 
