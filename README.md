@@ -1,4 +1,4 @@
-# HWRFR_PET
+# HWRFR_MRI
 
 The data was from OASIS-2.
 For every subject, I downloaded the baseline data--MR1 (1st visit) and simply chose the 1st scan. Then I opened the terminal in the associated directory and entered command line:
