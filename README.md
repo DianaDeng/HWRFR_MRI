@@ -21,7 +21,7 @@ In the folder named "data", "example_1d" includes the data used in "demo1.m"; "i
 The "glmnet_matlab" folder is download from the website: https://web.stanford.edu/~hastie/glmnet_matlab/.
 
 
-Dr. Wang (Xuejing Wang from Umich) provided part of the code. Thanks to Dr. Wang. As for the incomplete part in the code, Annan Deng completed them according to her understanding of the work, which includes all the preprocessing code, ROC code and get_beta function.
+Dr. Wang (Xuejing Wang from Umich) provided a majority part of the code. Thanks to Dr. Wang. As for the incomplete part in the code, Annan Deng completed them according to her understanding of the work, which includes all the preprocessing code, ROC code and get_beta function.
 
 If any problem, please contact: Annan Deng via annandeng22@gmail.com.
 
@@ -29,8 +29,4 @@ Reference:
 
 Wang X , Nan B , Zhu J , et al. Classification of ADNI PET images via regularized 3D functional data analysis[J]. Biostatistics & Epidemiology, 2017.
 
-https://jupyter.org/install.html
-
 https://www.oasis-brains.org
-
-https://cran.r-project.org/web/packages/spm12r/vignettes/fmri_processing_spm12r.html
