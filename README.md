@@ -11,6 +11,8 @@ Folder "original data" contains downsampled data of extracted brains.
 However, as "Fslr" doesn't align the images, which negatively affect the accuracy of classification, we use spm12r to realign them. "Realign" process is usually used before "Co-registration" to align all the scans of one subject. Here although we have different subjects, my goal is to rigidly transform and rotate all the scans into one template. Therefore, the operation is reasonable here.
 
 Folder "aligned data" contains realigned data with improved brain extraction.
+Because of file size limit, this folder can only be accessed through google drive link:
+https://drive.google.com/drive/folders/1nDav3RLyUqEM4K8TUk-onoYjqIICzQVL?usp=sharing.
 
 The folder named "main functions" contains all functions.
 
